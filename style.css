@@ -1,0 +1,1735 @@
+:root { 
+   --cor1: #0F0F11;
+   --cor2: #1E1E27;
+   --cor3:#575774;
+   --cor4: #040211;
+   --cor5: #DB4D4D;
+   --cor6: #BA4C10;
+   --cor7: #0C0B0C;
+   --cor8: #C0BFB3;
+   --cor9: #24201C;
+
+
+   --cor10: #D5D5D5;
+   --cor11: #2C2C2A;
+    
+}
+
+
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+    
+    
+    
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./font/Inter/static/Inter_18pt-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('./font/Inter/static/Inter_18pt-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('./font/Inter/static/Inter_18pt-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('./font/Inter/static/Inter_18pt-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('./font/Inter/static/Inter_18pt-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('./font/Inter/static/Inter_18pt-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('./font/Inter/static/Inter_18pt-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('./font/Inter/static/Inter_18pt-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('./font/Inter/static/Inter_18pt-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('./font/Inter/static/Inter_18pt-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('./font/Inter/static/Inter_18pt-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('./font/Inter/static/Inter_18pt-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('./font/Inter/static/Inter_18pt-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('./font/Inter/static/Inter_18pt-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('./font/Inter/static/Inter_18pt-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  /* Continua com os Inter_24pt e Inter_28pt... */
+  
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins/Poppins-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins/Poppins-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins/Poppins-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins/Poppins-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins/Poppins-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins/Poppins-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins/Poppins-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins/Poppins-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins/Poppins-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins/Poppins-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins/Poppins-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins/Poppins-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+
+.gradient{
+    background-color: #0F0F11;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+   
+   
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+.gradientA{
+    background-color: #0F0F11;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: none;
+   
+}
+
+
+
+.principal-pag{
+    
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: inset 1px 0px 20px 20px #040211;
+}
+
+.principal-pag::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('imagens/5.jpg') center center no-repeat ;
+    background-size: cover;
+    opacity: 0.4;
+    z-index: -1;
+    
+}
+
+.principal-pag a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+
+
+
+
+
+
+.header{
+    text-align: center;
+    display: flex;
+    margin-top: 13px;
+    
+
+}
+
+.header span {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 15px;
+    
+}
+
+.header span{ 
+    
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: 'Inter', 'Poppins';
+    font-weight: 200;
+    color: #ffffffe3;
+    
+    
+    
+    
+   
+}
+
+.header .linkheader  {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Inter', 'Poppins';
+    font-weight: 200;
+    color: #ffffffe3;
+    
+  
+    
+}
+
+.linkheader{
+    cursor: pointer;
+}
+
+.linkheader:hover{
+    color: #D5D5D5;
+    font-weight: 700;
+}   
+
+
+
+.headerR{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-top: -20px;
+    
+    
+}
+
+.headerR span a {
+    margin-right: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+    
+   
+   
+    
+}
+
+.headerR button{
+    background-color: transparent;
+    
+  
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+.login{
+    font-weight: 100;
+}
+
+.login:hover{
+    font-weight: 700;
+}
+
+.headerR #BuyNowPrincipal{
+    font-weight: 100;
+}
+
+.headerR #BuyNowPrincipal:hover{
+    font-weight: 700;
+}
+
+h1{
+    color: #fff;
+    width: 270px;
+}
+
+.title1{
+    position: relative;
+    left: 60px;
+    top: 40px;
+    font-size: 18px;
+    opacity: 0.7;
+    display: flex;
+    
+   
+}
+
+.title2{
+    position: relative;
+    top: 250px;
+    opacity: 0.7;
+    left: 60px;
+    display: flex;
+}
+
+.title3{
+    position: relative;
+    left: 1100px;
+    bottom: 30px;
+    opacity: 0.7;
+    display: flex;  
+}
+
+.secondpage .secondbutton{
+    display: flex;
+    justify-content: center;
+    
+    
+    
+}
+
+.secondbutton button{
+    display: flex;
+    
+    margin-top: 50px;
+    width: 200px;
+    height: 100px;
+    margin-right: 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1E27;
+    border: 2px solid #575774;
+    color: #fff;
+    border-radius: 36px;
+    font-size: 23px;
+    font-family: 'Inter', 'Poppins', Arial, Helvetica, sans-serif;
+    
+}
+
+.secondbutton button:hover{
+    background-color: #121218;
+}
+
+.secondimage{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transform: translateX(-50px);
+    border-radius: 55px;
+   
+   
+
+}
+
+.secondimage img {
+    transform: translateY(-250px);
+    width: 500px;
+    margin-right: 30px;
+    border-radius: 55px;    
+    opacity: 0.6;
+}
+
+.secondpage .textpage{
+    position: relative;
+    top: 120px;
+    width: 400px;  
+    left: 200px;    
+}
+
+.secondpage .textpage h1{
+    font-size: 35px;
+    width: 450px;   
+}
+
+.secondpage .textpage span {
+    right: 25px;
+      
+    
+}
+
+.secondpage .textpage span p {
+    color: #D5D5D5;
+    text-align: left;
+    font-size: 30px;
+    width: 450px;
+    margin-top: 10px;
+}
+
+.textpage2{
+    position: relative;
+    top: 200px;
+    width: 500px;  
+    left: 800px; 
+    
+}
+
+.textpage2 p{
+    color: #D5D5D5;
+    font-size: 28px;
+    margin-top: 10px;
+    
+}
+
+.textpage2 h1{
+    font-size: 40px;
+    width: 500px;
+    
+}
+
+.secondimage2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.secondimage2 img{
+    border-radius: 35px;
+    transform: translateY(-200px);
+}
+
+.lastpage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lastpage h1{
+    font-size: 46px;
+    margin-top: 40px;
+    text-align: center;
+    width: 350px;
+    
+    
+}
+
+ .products{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
+    
+}
+
+.product-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 600px;
+    width: 330px;
+    height: 390px;
+    margin: 0 10px;
+}
+
+.product-item h2{
+    color: #D5D5D5;
+    font-size: 30px;
+    margin-bottom: 20px;    
+}
+
+.bloco{
+    background-color: #040211;
+    width: 330px;
+    height: 390px;
+    border-radius: 35px;
+    margin-right: 15px;
+}
+
+.special{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.special .cranberry img{
+    width: 150px;   
+    margin-top: 20px;
+    
+}
+
+.special .cranberry h2{
+    z-index: 0;
+    position: absolute;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(30px);
+    color: #DB4D4D;
+}
+
+.special .cranberry .barracereja{
+    position: absolute;
+    left: 90px;
+    rotate: 25deg;
+    z-index: 2;
+    width: 150px;  
+    animation: float 2s ease-in-out infinite; 
+}   
+
+.special .cranberry .titulo{
+    text-align: center;
+    width: 300px;
+    margin-left: -105px;
+    margin-top: 70px;
+    z-index: 0;
+}
+
+.special .cranberry .Cereja{
+    transform: translateX(10px); 
+    z-index: 2;   
+    animation: float 2s ease-in-out infinite;
+    
+}   
+
+.special .caramel img{
+    width: 150px;
+    margin-top: 20px;
+    animation: float 2s ease-in-out infinite; 
+}
+
+.special .caramel h2{
+    z-index: 0;
+    position: absolute;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 200px;    
+    margin-top: 30px;
+    
+    font-size: 32px;
+    letter-spacing: 1px;    
+    color: #BA4C10;
+}
+
+.special .caramel .barracaramelo{
+    position: absolute;
+    left: 100px;
+    rotate: 25deg;
+    z-index: 3;
+}
+
+.special .caramel .titulo2{
+    text-align: center;
+    width: 300px;
+    margin-left: -45px;
+    margin-top: 70px;
+    z-index: 0;
+}
+
+.special .caramel .caramelo{
+   
+    z-index: 2;   
+    width: 200px;
+    
+}
+
+.special .caramel .caramelhover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform: translateY(120px);
+    flex-direction: column;
+    
+}
+
+.special .caramel .caramelhover .buynowflavor{
+    display: none;
+    background-color: #0a0636; /* fundo azul escuro */
+    color: white;
+     font-weight: bold;
+     border: none;
+    border-radius: 25px; /* bordas bem arredondadas */
+     padding: 10px 50px;
+     font-size: 14px;
+    cursor: pointer;
+    margin-top: 30px;
+     transition: background-color 0.3s ease;
+}
+
+.special .caramel .caramelhover .buynowflavor:hover{
+    background-color: #140c66;
+}
+
+.special .caramel .caramelhover .titulohover{
+    display: none;
+    color: #AD2431;
+    text-align: center;
+    margin-bottom: 330px;
+    margin-left: 200px;
+    font-size: 36px;
+    width: 300px;
+}
+
+.special .caramel .caramelhover .paragrafohover{
+    font-size: 24px;
+    color: #fff;
+    display: none;
+    width: 250px;
+    margin-top: 20px;
+    font-family: 'Poppins';
+    font-weight: lighter;
+    
+
+}
+
+.dark{
+    background-color: #0C0B0C;
+}
+
+
+
+.dark img{
+    width: 330px;
+    margin-top: 10px;
+    opacity: 0.8;
+    animation: float 2s ease-in-out infinite; 
+}
+
+.dark .sombra{
+        background-color: #000000;
+        height: 4px;
+        width: 150px;
+
+        border-radius: 25px;
+        margin-left: 90px;
+        animation: sombramove 2s ease-in-out infinite;
+        animation-delay: 0.2;
+}
+
+.dark .darkhover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform: translateY(60px);
+    flex-direction: column;
+}
+.dark .darkhover .titulohoverdark{
+    display: none;
+    color: #868688;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 36px;
+}
+
+.dark .darkhover .paragrafohoverdark{
+    font-size: 24px;
+    color: #fff;
+    display: none;
+    margin-left: 50px;  
+    font-family: 'Poppins';
+    font-weight: lighter;
+    
+}
+
+.dark .darkhover .buynowdark{
+    display: none;
+    background-color: #121112; /* fundo azul escuro */
+    color: #fff;
+     font-weight: bold;
+     border: none;
+    border-radius: 25px; /* bordas bem arredondadas */
+     padding: 10px 50px;
+     font-size: 14px;
+     margin-top: 20px;
+     margin-left: 90px;
+    cursor: pointer;
+   
+     transition: background-color 0.3s ease;
+}
+
+.dark .darkhover .buynowdark:hover{
+    background-color: #242224;
+    color: #e6e5e5;
+}
+
+.classic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     /* espaço entre white e black */
+     background: linear-gradient(to right, #C0BFB3 50%, #24201C 50%);
+  }
+
+  .classic .classichover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform: translateY(40px);
+    flex-direction: column;
+
+
+  }
+
+    
+
+  .classic .classichover .paragrafohoverclassic{
+    font-size: 24px;
+    color: #000000;
+    display: none;
+    margin-left: 50px;  
+    font-family: 'Poppins';
+    font-weight: bold;
+    margin-top: -180px;
+    
+   
+  }
+
+ 
+
+  .classic .classichover .titulohoverclassic{
+    display: none;
+    text-align: center;
+    font-size: 36px ;
+    color: #24201C;
+  }
+
+ 
+
+  .classic .classichover .buynowclassic{
+    display: none;
+    background-color: #3F3632; /* fundo azul escuro */
+    color: #fff;
+     font-weight: bold;
+     border: none;
+    border-radius: 25px; /* bordas bem arredondadas */
+     padding: 10px 50px;
+     font-size: 14px;
+     margin-top:30px;
+    margin-bottom: 100px;
+     margin-left: 80px;
+    cursor: pointer;
+   
+     transition: background-color 0.3s ease;
+  }
+  
+  .classic .classichover .buynowclassic:hover{
+    background-color: #5c4e48;
+  }
+  .classic div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .classic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: -30px;
+   
+ 
+    
+
+  }
+
+
+  .classic img .black{
+   margin: auto 70px auto 0px;
+  }
+  
+  .classic h2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 28px;
+    margin-bottom: 200px;
+    text-align: center;
+    gap: 20px;
+    
+   
+  }
+  
+  .classic .whitetext { 
+    color: #24201C;
+    margin-right: -90px;
+   
+    
+
+  }
+  .classic  .blacktext { 
+    color: #D5D5D5;
+    transform: translateX(90px);
+    
+    
+    
+  }
+
+
+  .animate__animated.animate__pulse{
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  .animate__animated.animate__fadeInLeft{
+    
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    
+    
+    
+  } 
+
+
+  .secondimage {
+    opacity: 0;
+  }
+  
+  .secondimage.visible {
+    opacity: 1;
+    animation-name: fadeInRight;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+  }
+
+  .animate__animated.animate__zoomInDown{
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+  }
+
+  .h1semovendo{
+    opacity: 0;
+  }
+
+
+  .h1semovendo.visable {
+    opacity: 1;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+  }
+
+  .secondimage2{
+    opacity: 0;
+  }
+
+  .secondimage2.visable{
+    opacity: 1;
+    animation-name: fadeInLeft;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+  }
+
+.textpage2 h1{
+   animation-name: zoomInUp;
+   animation-duration: 3s;
+   animation-delay: 1s;
+   animation-fill-mode: both;
+}
+
+.textpage2 p{
+    animation-name: zoomInUp;
+   animation-duration: 2s;
+   animation-delay: 1s;
+   animation-fill-mode: both;
+}
+
+
+
+
+.products {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 600px;
+    
+  }
+  
+  .product-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .product-item.active {
+    opacity: 1;
+    z-index: 2;
+    transform: translateX(0);
+  }
+  
+  .product-item.prev-active {
+    opacity: 0;
+    z-index: 1;
+    transform: translateX(-100%);
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 5px 6px 3px 6px;
+    border-radius: 50%;
+    
+    
+  }
+
+  
+  .prev:hover, .next:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+  
+  .prev { left: 10px; }
+  .next { right: 10px; }    
+
+
+
+  
+   
+  
+  @keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+  }
+
+  @keyframes sombramove {
+    0%{
+        width: 150px;
+        margin-left: 90px;
+
+    }
+    50%{
+        width: 60px;
+        margin-left: 130px;
+    }
+    100%{
+        width: 150px;
+        margin-left: 90px;
+    }
+  }
+
+
+
+
+  @media screen and (max-width: 1115px){
+    
+    .gradientA{
+        display: block;
+    }
+
+
+ .secondimage img {
+    width: 390px;
+    margin-right: 30px;
+    border-radius: 55px;
+    margin-top: 30px;
+    opacity: 0.6;
+}
+
+.secondimage2 img {
+    width: 450px;
+    margin-top: 60px;
+}
+
+.textpage2{
+    margin-left: -260px;
+}
+
+.textpage2 h1{
+    width: 500;
+    font-size: 32px;
+
+}
+
+.textpage2 p{   
+font-size: 28;
+}
+
+
+
+ 
+
+
+
+  }
+
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+ 
+
+    .gradientA{
+        display: block;
+    }
+
+
+ .secondimage img {
+    width: 300px;
+    margin-right: 80px;
+    border-radius: 55px;
+    margin-top: 115px;
+    opacity: 0.6;
+}
+
+.secondimage2 img {
+    width: 330px;
+    margin-top: -60px;
+}
+
+
+
+.secondpage .textpage .h1semovendo{
+    font-size: 25px;
+    margin-left: -120px;
+    width: 300px;
+
+}
+
+
+.secondpage .textpage span p{
+    font-size: 22px;
+    margin-left: -120px; 
+    width: 350px;
+}
+
+
+.textpage2{
+    margin-left: -260px;
+}
+
+.textpage2 h1{
+    flex-wrap: wrap;
+    font-size: 25px;
+    margin-left: -140px;
+    margin-bottom: 30px;
+    width: 300px;
+    transform: translateY(-150px);
+}
+
+.textpage2 p{   
+font-size: 20px;
+margin-left: -140px;
+width: 350px;
+margin-bottom: 40px;
+transform: translateY(-160px);
+}
+
+
+  }
+
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+        
+    .lastpage .next{
+        display: block;
+    }
+    
+    .lastpage .prev{
+        display: block;
+    }
+
+ .secondimage img {
+    width: 220px;
+    margin-right: 10px;
+    border-radius: 55px;
+    margin-top: 160px;
+    opacity: 0.6;   
+    margin-left: 10px;
+}
+
+.secondimage2 img {
+    width: 250px;
+    margin-top: -90px;
+}
+
+
+
+.secondpage .textpage .h1semovendo{
+    font-size: 20px;
+    width: 200px;   
+    margin-left: -140px;
+
+}
+
+
+.secondpage .textpage span p{
+    font-size: 18px;
+    margin-left: -140px; 
+    width: 300px;
+}
+
+
+.textpage2{
+    margin-left: -260px;
+}
+
+.textpage2 h1{
+    width: 250px;
+    font-size: 18px;
+    margin-left: -220px;
+   margin-bottom: 30px;
+
+}
+
+    .textpage2 p{   
+    font-size: 16px;
+    margin-left: -220px;
+    width: 250px;
+    margin-bottom: 280px;
+}
+.secondbutton button{
+    display: flex;
+    
+    margin-top: 50px;
+    width: 180px;
+    height: 100px;
+    margin-right: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1E27;
+    border: 2px solid #575774;
+    color: #fff;
+    border-radius: 36px;
+    font-size: 23px;
+    font-family: 'Inter', 'Poppins', Arial, Helvetica, sans-serif;
+    
+}
+
+  }
+
+
+  @media screen and (max-width: 576px) {
+    /* Celulares em geral */
+    .secondimage img {
+        width: 200px;
+        border-radius: 55px;
+        margin-top: 170px;
+        opacity: 0.6;
+        
+    }
+    
+    .secondimage2 img {
+        width: 240px;
+        margin-top: -270px;
+        margin-left: -25px;
+    }
+    
+    
+    
+    .secondpage .textpage .h1semovendo{
+        font-size: 17px;
+        width: 200px;   
+        margin-left: -160px;
+    
+    }
+    
+    
+    .secondpage .textpage span p{
+        font-size: 15px;
+        margin-left: -160px; 
+        width: 200px;
+    }
+    
+    
+    .textpage2{
+        margin-left: -260px;
+    }
+    
+    .textpage2 h1{
+        width: 200px;
+        font-size: 17px;
+        margin-left: -260px;
+       margin-bottom: 20px;
+    
+    }
+    
+        .textpage2 p{   
+        font-size: 15px;
+        margin-left: -260px;
+        width: 200px;
+        margin-bottom: 400px;
+    }
+    
+
+    .header .linkheader  {
+        margin-right: 15px;
+        margin-left: 15px;
+        font-size: 16px;
+        font-family: 'Inter', 'Poppins';
+        font-weight: 200;
+        color: #ffffffe3;
+        
+      
+        
+    }
+
+    .linkheader{
+        cursor: pointer;
+    }
+    
+    .linkheader:hover{
+        color: #D5D5D5;
+        font-weight: 700;
+    }   
+    
+    
+    
+    .headerR{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        margin-top: -17px;
+        
+        
+    }
+    
+    .headerR span a {
+        margin-right: 10px;
+        font-size: 16px;
+        margin-left: 20px;
+        
+       
+       
+        
+    }
+    
+    .headerR button{
+        background-color: transparent;
+        
+      
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        
+    }
+    .secondbutton button{
+        display: flex;
+        
+        margin-top: 50px;
+        width: 150px;
+        height: 80px;
+        margin-right: 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #1E1E27;
+        border: 2px solid #575774;
+        color: #fff;
+        border-radius: 36px;
+        font-size: 18px;
+        font-family: 'Inter', 'Poppins', Arial, Helvetica, sans-serif;
+        
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    /* Telas bem pequenas (smartphones compactos) */
+
+    .secondimage img {
+        width: 130px;
+        border-radius: 55px;
+        margin-top: 285px;
+        opacity: 0.6;
+        margin-right: 3px;
+        
+    }
+    
+    .secondimage2 img {
+        position: absolute;
+        width: 150px;
+       top: 0px;
+       margin-top: -240px;
+       transform: translateX(-10px); 
+    }
+
+   
+    
+    
+    
+    .secondpage .textpage .h1semovendo{
+        font-size: 16px;
+        width: 350px;   
+        margin-left: -175px;
+    
+    }
+    
+    
+    .secondpage .textpage span p{
+        font-size: 11px;
+        margin-left: -190px; 
+        margin-bottom: -30px;
+        margin-top: 50px;
+        width: 150px;
+    }
+    
+    
+    .textpage2{
+        margin-left: -260px;
+       
+    }
+    
+    .textpage2 h1{
+        width: 200px;
+        font-size: 15px;
+        margin-left: -490px;
+       margin-bottom: 70px;
+    
+    }
+    
+        .textpage2 p{   
+        font-size: 10px;
+        margin-left: -380px;
+        width: 150px;
+        margin-bottom: 320px;
+    }
+
+    .header .linkheader  {
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 14px;
+        font-family: 'Inter', 'Poppins';
+        font-weight: 200;
+        color: #ffffffe3;
+        
+      
+        
+    }
+
+    .linkheader{
+        cursor: pointer;
+    }
+    
+    .linkheader:hover{
+        color: #D5D5D5;
+        font-weight: 700;
+    }   
+
+    .headerR{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        margin-top: -21.5px;
+        
+        
+    }
+    
+    .headerR span a {
+        margin-right: 10px;
+        font-size: 14px;
+        margin-left: 0px;
+        
+       
+       
+        
+    }
+    
+    .headerR button{
+        background-color: transparent;
+        
+      
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+        
+    }
+    
+    .login{
+        font-weight: 100;
+    }
+    
+    .login:hover{
+        font-weight: 700;
+    }
+    
+    .headerR #BuyNowPrincipal{
+        font-weight: 100;
+    }
+    
+    .headerR #BuyNowPrincipal:hover{
+        font-weight: 700;
+    }
+
+
+    .secondbutton button{
+        display: flex;
+        
+        margin-top: 50px;
+        width: 130px;
+        height: 70px;
+        margin-right: 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #1E1E27;
+        border: 2px solid #575774;
+        color: #fff;
+        border-radius: 25px;
+        font-size: 18px;
+        font-family: 'Inter', 'Poppins', Arial, Helvetica, sans-serif;
+        
+    }
+
+    .product-item
+    {
+        margin-top: -30px;
+        margin-right: -10px;
+    }
+
+    .dark .darkhover .paragrafohoverdark{
+    font-size: 20px;
+    color: #fff;
+    display: none;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    font-family: 'Poppins';
+    font-weight: lighter;
+    margin-left: 50px;
+        
+    }
+
+    .dark .darkhover .titulohoverdark{
+       
+    }
+
+    .dark .darkhover .buynowdark{
+        margin-top: -80px;
+       
+    }
+
+    .classic .classichover .paragrafohoverclassic{
+        font-size: 20px;
+    }
+
+.special .caramel .caramelhover .titulohover{
+    top: -80px;
+}
+
+    
+.special .caramel .caramelhover .paragrafohover{
+    font-size: 20px;
+    color: #fff;
+    display: none;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Poppins';
+    font-weight: lighter;
+    
+
+}
+
+.special .caramel .caramelhover .buynowflavor{
+    margin-top: -0.5px;
+}
+
+.title1{
+    position: relative;
+    left: 30px;
+    top: 40px;
+    font-size: 18px;
+    opacity: 0.7;
+    display: flex;
+    
+   
+}
+
+.title2{
+    position: relative;
+    top: 250px;
+    opacity: 0.7;
+    left: 30px;
+    display: flex;
+}
+
+.dark img{
+    width: 280px;
+    margin-left: 20px;
+    margin-top: 10px;
+    opacity: 0.8;
+    animation: float 2s ease-in-out infinite; 
+}
+
+.product-item h2{
+    margin-right: 20px;
+}
+
+.lastpage h1{
+    font-size: 40px;
+    margin-top: 40px;
+    text-align: center;
+    width: 350px;
+    
+    
+}  
+
+.classic .classichover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform: translateY(40px);
+    flex-direction: column;
+
+
+  }
+
+    
+
+  .classic .classichover .paragrafohoverclassic{
+    font-size: 24px;
+    color: #000000;
+    display: none;
+    margin-left: 50px;  
+    font-family: 'Poppins';
+    font-weight: bold;
+    margin-top: -180px;
+    
+   
+  }
+
+ 
+
+  .classic .classichover .titulohoverclassic{
+    display: none;
+    text-align: center;
+    font-size: 36px ;
+    color: #24201C;
+  }
+
+ 
+
+  .classic .classichover .buynowclassic{
+    display: none;
+    background-color: #3F3632; /* fundo azul escuro */
+    color: #fff;
+     font-weight: bold;
+     border: none;
+    border-radius: 25px; /* bordas bem arredondadas */
+     padding: 10px 50px;
+     font-size: 14px;
+     margin-top:30px;
+    margin-bottom: 100px;
+     margin-left: 80px;
+    cursor: pointer;
+   
+     transition: background-color 0.3s ease;
+  }
+
+
+  .classic  .black {
+    transform: translateX(-25px);
+   }
+
+   .classic .classichover .titulohoverclassic {
+    font-size: 33px;
+    margin-left: 20px;
+   }
+
+  }
+ 
+
